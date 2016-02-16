@@ -2931,6 +2931,58 @@ BoxCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_PrefabInternal: {fileID: 546435067}
+--- !u!1 &433592992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 433592995}
+  - 65: {fileID: 433592994}
+  - 114: {fileID: 433592993}
+  m_Layer: 0
+  m_Name: EntreeVolcan
+  m_TagString: teleportNiveau5
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &433592993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433592992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4804a7946fb3f540ad92ee393a1dc72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &433592994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433592992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.835719, y: 6.2991652, z: 1}
+  m_Center: {x: -1.9178557, y: 0.7250061, z: 0}
+--- !u!4 &433592995
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433592992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.7, y: 16.73, z: 139.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
 --- !u!1 &434211303 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 49ef3e6c383d948f68f399a5a8143fb9, type: 3}
@@ -4570,7 +4622,7 @@ BoxCollider:
   m_GameObject: {fileID: 671697720}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.083232515, y: 0.0062334384, z: 0.50740427}
   m_Center: {x: -0.0030869802, y: 0.039552208, z: -0.0043986677}
@@ -6650,6 +6702,8 @@ Transform:
   - {fileID: 551653165}
   - {fileID: 1213357175}
   - {fileID: 1918488065}
+  - {fileID: 2071930529}
+  - {fileID: 1844670322}
   m_Father: {fileID: 0}
   m_RootOrder: 17
 --- !u!1 &1016603462 stripped
@@ -12213,7 +12267,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 221.3
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: m_LocalPosition.y
@@ -12221,7 +12275,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 158.4
+      value: 115.2
       objectReference: {fileID: 0}
     - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: m_LocalRotation.x
@@ -12318,6 +12372,10 @@ Prefab:
     - target: {fileID: 113178, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428280, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_Constraints
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
@@ -13639,6 +13697,46 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09523626, y: 0.413116, z: 0.103012614}
   m_Center: {x: 0.0011669799, y: 0.21238437, z: -0.0164784}
+--- !u!1 &1844670321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1844670322}
+  - 65: {fileID: 1844670323}
+  m_Layer: 0
+  m_Name: BordNiveau (40)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1844670322
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1844670321}
+  m_LocalRotation: {x: 0.20725763, y: 0.67605066, z: -0.20725752, w: -0.67605036}
+  m_LocalPosition: {x: -13.25, y: 15.49, z: 60.159996}
+  m_LocalScale: {x: 2.7436168, y: 0.3867576, z: 0.75387996}
+  m_Children: []
+  m_Father: {fileID: 1016084853}
+  m_RootOrder: 40
+--- !u!65 &1844670323
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1844670321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1847920803 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -15416,6 +15514,46 @@ Transform:
   - {fileID: 772301953}
   m_Father: {fileID: 1326520936}
   m_RootOrder: 0
+--- !u!1 &2071930528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2071930529}
+  - 65: {fileID: 2071930530}
+  m_Layer: 0
+  m_Name: BordNiveau (39)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2071930529
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2071930528}
+  m_LocalRotation: {x: 0.20725763, y: 0.67605066, z: -0.20725752, w: -0.67605036}
+  m_LocalPosition: {x: -16.9, y: 15.49, z: 60.16}
+  m_LocalScale: {x: 2.7436166, y: 0.38675758, z: 0.75387996}
+  m_Children: []
+  m_Father: {fileID: 1016084853}
+  m_RootOrder: 39
+--- !u!65 &2071930530
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2071930528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2078398060
 Prefab:
   m_ObjectHideFlags: 0

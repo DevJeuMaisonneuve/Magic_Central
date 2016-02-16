@@ -219,6 +219,7 @@ function gestionStates()
     if (vieBoss <= 0) 
     {
     	Destroy(this.gameObject);
+    	Application.LoadLevel(9);
     }
 }
 
