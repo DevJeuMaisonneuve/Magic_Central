@@ -19,7 +19,7 @@ var state : aiState;
  * @var vieBoss
  */   
 
-public var vieBoss:int = 200;
+public var vieBoss:int = 800;
 
 /*
  * Dégats du boss
@@ -223,12 +223,12 @@ function gestionStates()
     }
 
 
-    if ((vieBoss <= 150)&&(attaqueInvisiblePossible==true)&&(timer > attaqueCooldown)) 
+    if ((vieBoss <= 400)&&(attaqueInvisiblePossible==true)&&(timer > attaqueCooldown)) 
     {
     	state = aiState.AttaqueInvisible;
     }
 
-    if ((vieBoss <= 100)&&(attaquePuissantePossible==true)&&(timer > attaqueCooldown)) 
+    if ((vieBoss <= 250)&&(attaquePuissantePossible==true)&&(timer > attaqueCooldown)) 
     {
     	state = aiState.AttaquePuissante;
     }
@@ -279,7 +279,7 @@ function attaque()
 {
 	Debug.Log("PUNCH");
 	timer= 0f;
-	degatBoss =10;
+	degatBoss =30;
 	animateur.SetBool('punch', true);
 	if(santeHero.Viedisponible>0)
 	{
@@ -293,7 +293,7 @@ function attaque()
 function attaquePuissante() 
 {
 	timer= 0f;
-	degatBoss = 35;
+	degatBoss = 90;
 	animateur.SetBool('magicAttack', true);
 	yield WaitForSeconds(2);
 	nouvelleAoe = Instantiate(aoeBoss, hero.transform.position, transform.rotation);
@@ -311,7 +311,7 @@ function attaquePuissante()
 function attaqueInvisible() 
 {
 	timer= 0f;
-	degatBoss = 25;
+	degatBoss = 55;
 	// On instantie de la fumée à l'endroit ou le boss va disparaître
 	nouvelleFumee = Instantiate(fumee, transform.position, transform.rotation);
 	//On désactive le mesh renderer pour rendre le boss invisible

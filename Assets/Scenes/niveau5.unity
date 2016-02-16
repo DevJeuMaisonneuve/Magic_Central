@@ -6636,7 +6636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  vieBoss: 200
+  vieBoss: 800
   degatBoss: 0
   cible: {fileID: 1239308139}
   hero: {fileID: 1239308127}

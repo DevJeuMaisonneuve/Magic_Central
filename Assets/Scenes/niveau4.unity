@@ -12544,7 +12544,7 @@ Prefab:
     - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: animateur
       value: 
-      objectReference: {fileID: 1617820521}
+      objectReference: {fileID: 1617820520}
     m_RemovedComponents:
     - {fileID: 11430886, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
