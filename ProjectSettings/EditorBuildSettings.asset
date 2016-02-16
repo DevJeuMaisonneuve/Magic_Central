@@ -21,7 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/niveau4.unity
   - enabled: 1
     path: Assets/Scenes/niveau5.unity
-  - enabled: 0
-    path: Assets/Scenes/sceneTest.unity
   - enabled: 1
     path: Assets/Scenes/Game_Over.unity
+  - enabled: 1
+    path: Assets/Scenes/Victoire.unity
+  - enabled: 0
+    path: Assets/Scenes/sceneTest.unity

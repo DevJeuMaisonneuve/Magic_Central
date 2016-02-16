@@ -1,32 +1,7 @@
 ﻿var Porte : GameObject;
 var nbClefs:int;
-//
-// function Start() {
-//
-// 	nbClefs =  PlayerPrefs.GetInt('Clefs');
-//
-// }
-// 
-// function Update() {
-//
-// 
-// }
-// 
-// function OnTriggerEnter (Other : Collider) {
-//  
-//	  if (PlayerPrefs.HasKey("Clefs") && nbClefs == 4) {
-//		 	if(Other.gameObject.tag == "Hero") {
-//		  
-//		  		Porte.GetComponent.<Animation>().Play();
-//		  		Debug.Log ("porte ouverte");
-//		 		Destroy(this);
-//		 	}
-//
-//	  }
-//  
-// }
 
-
+public var panneauClefs:GameObject;
 
 
 
@@ -51,12 +26,23 @@ function OnTriggerEnter (Other : Collider) {
          
                if  (nbClefs == 4 ) 
                {
-         		 Debug.Log("Test");
                  Porte.GetComponent.<Animation>().Play();
                  Debug.Log ("porte ouverte");
                  Destroy(this);
                }
 
+               else {
+               		panneauClefs.SetActive(true);
+               }
+
            }
 
+}
+
+function OnTriggerExit (Other : Collider) {
+
+	       if(Other.gameObject.tag == "Hero") 
+           {
+           		panneauClefs.SetActive(false);
+           }
 }
