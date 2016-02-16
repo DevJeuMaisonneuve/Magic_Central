@@ -6644,6 +6644,7 @@ MonoBehaviour:
   chaseSpeed: 3
   attackDistance: 3
   attaqueCooldown: 5
+  attaqueCooldownCorpsACorps: 1
   bossMesh: {fileID: 445848237}
   fumee: {fileID: 150308, guid: 95bcb605218a5664f9b9beb6a2061cb0, type: 2}
   aoeBoss: {fileID: 112868, guid: 8b434d30c5ba79944bc43a87f4e30d53, type: 2}

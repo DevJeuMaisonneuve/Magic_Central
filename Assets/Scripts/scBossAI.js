@@ -87,6 +87,14 @@ public var attackDistance : float = 2;
 public var attaqueCooldown : float = 5f;
 
 /*
+ * Temps entre les attaques corps a corps
+ * @access public
+ * @var attaqueCooldown
+ */
+
+public var attaqueCooldownCorpsACorps : float =1f;
+
+/*
  * Bool pour attaque invisible
  * @access private
  * @var attaqueInvisiblePossible
@@ -212,17 +220,17 @@ function gestionStates()
     var distanceToTarget = (cible.position - transform.position).sqrMagnitude;
 
 
-    if ((distanceToTarget <= attackDistance)&&(timer > attaqueCooldown))
-    {
-        state = aiState.AttaqueBasique;
-    }
-
-    else if(distanceToTarget <= chaseDistance*chaseDistance) 
+    if(distanceToTarget <= chaseDistance*chaseDistance) 
     {
         state = aiState.Courrir;
     }
 
 
+    if ((distanceToTarget <= attackDistance)&&(timer > attaqueCooldownCorpsACorps))
+    {
+        state = aiState.AttaqueBasique;
+    }
+  
     if ((vieBoss <= 400)&&(attaqueInvisiblePossible==true)&&(timer > attaqueCooldown)) 
     {
     	state = aiState.AttaqueInvisible;
@@ -277,16 +285,16 @@ function Courrir()
 
 function attaque() 
 {
-	Debug.Log("PUNCH");
-	timer= 0f;
-	degatBoss =30;
 	animateur.SetBool('punch', true);
+	timer= 0f;
+	degatBoss =5;
 	if(santeHero.Viedisponible>0)
 	{
 		santeHero.SendMessageUpwards("PrendDamage" , degatBoss, SendMessageOptions.DontRequireReceiver );
 
 	}
-	animateur.SetBool('punch', false);
+	animateur.SetBool('run', true);
+
 }
 
 
