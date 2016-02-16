@@ -171,6 +171,14 @@ function augmenterOr(nbOr:int)
 	PlayerPrefs.SetInt("Or", orInventaire);
 }
 
+//function augmenterClefs(nbClefs:int) 
+//{
+//	
+//	nbClefs += nbClefs;
+//	Debug.Log("Clefs :" + nbClefs);
+//	// On stocke les clefs dans des players prefs quand le joueur va changer de scene
+//	PlayerPrefs.SetInt("Clefs", nbClefs);
+//}
 
 function OnTriggerEnter (autre : Collider) {
 	if (autre.gameObject.tag == "tasOr") {

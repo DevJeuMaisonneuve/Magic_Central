@@ -99,23 +99,16 @@ private var santeHero:scDeplacementTirHero;
 
 private var timer:float;
 
-/*
- * Référence au script du minion
- * @access private
- * @var scMinion
- */   
-
-private var scMinion:scMinion;
 
 function Awake () {
 	hero= GameObject.FindGameObjectWithTag('Hero');
 	santeHero = hero.GetComponent.<scDeplacementTirHero>();
-	scMinion = this.gameObject.GetComponent.<scMinion>();
 }
 
 function Start () {
 	agent = GetComponent.<NavMeshAgent>();
 	exclamation.SetActive (false);
+	Debug.Log(degatMinion);
 }
 
 function Update () {
@@ -140,14 +133,11 @@ function Update () {
 		agent.SetDestination(cible.transform.position);
 		animateur.SetBool('court', true);
 
-		if (scMinion.vieMinion > 0) {
+		if(timer > tempEntreAttaque && distance <= 1){
 
-			if(timer > tempEntreAttaque && distance <= 1)
-			{
-
-			Attaque();
-			}
+		Attaque();
 		}
+
 	
 	} else if  (distance <= stop) {
 		
