@@ -2721,7 +2721,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22458764, guid: 6a1e397df85dc2445a73c60ebf910ce0, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22497860, guid: 6a1e397df85dc2445a73c60ebf910ce0, type: 2}
       propertyPath: m_AnchorMax.x
@@ -2761,7 +2761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22428904, guid: 6a1e397df85dc2445a73c60ebf910ce0, type: 2}
       propertyPath: m_LocalScale.y
-      value: 3.8598778
+      value: 3.3808293
       objectReference: {fileID: 0}
     - target: {fileID: 22428904, guid: 6a1e397df85dc2445a73c60ebf910ce0, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -5564,7 +5564,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 514231900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.317581, y: 0.56393015, z: 117.4151}
+  m_LocalPosition: {x: 2.21, y: 0.56393015, z: 120.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1077399377}
@@ -8351,7 +8351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panneauDialogue: {fileID: 206830900}
   textDialogue: {fileID: 206830891}
-  spriteMinion: {fileID: 0}
+  spriteMinion: {fileID: 21300000, guid: d52b4b1c92d6447558bdefdbea9d8647, type: 3}
   spriteKayden: {fileID: 21300000, guid: c82214072f8124d56bc399e49f70e131, type: 3}
   spriteKaseem: {fileID: 21300000, guid: 3d5ecaa1634ec42cb92d6d2d87348b0f, type: 3}
   spriteNakiya: {fileID: 21300000, guid: 14747a56075e7471b975f34d6b9a99a1, type: 3}
