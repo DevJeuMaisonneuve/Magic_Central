@@ -1,7 +1,16 @@
 ﻿#pragma strict
 
-function Start () {
+/*
+ * Référence au heros
+ * @access public
+ * @var heros
+ */ 
+public var heros:GameObject;
 
+private var rigidBodyHeros:Rigidbody;
+
+function Start () {
+	rigidBodyHeros = heros.GetComponent.<Rigidbody>();
 }
 
 function Update () {
@@ -12,12 +21,12 @@ function Update () {
 
 function OnTriggerEnter(heros:Collider) {
 	if (heros.tag == "Hero") {
-		heros.transform.rotation.x+= 3;
+		rigidBodyHeros.drag = 1;
 	}
 }
 
 function OnTriggerExit(heros:Collider) {
 	if (heros.tag == "Hero") {
-		heros.transform.rotation.x-= 3;
+		rigidBodyHeros.drag = 1000000;
 	}
 }

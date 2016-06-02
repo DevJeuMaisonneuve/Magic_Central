@@ -22,5 +22,5 @@ Application.Quit(); //Ferme le jeu
 }
 
 function Credits () {
-Application.LoadLevel (12); //Charge la scène du menu
+Application.LoadLevel (11); //Charge la scène du menu
 }
